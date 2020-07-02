@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+import { mongoose } from 'mongoose'
 import pkg from './package'
 
 const getMongo = ({
@@ -11,7 +11,6 @@ const getMongo = ({
   }
 
   let hasConnected = false
-
   const connect = async () => {
     await mongoose.connect(mongoUrl, {
       useNewUrlParser: true,

@@ -1,5 +1,5 @@
-import mongoose from 'mongoose'
-import pkg from './package'
+const mongoose = require('mongoose')
+const pkg = require('./package')
 
 const getMongo = ({
   mongoUrl,
